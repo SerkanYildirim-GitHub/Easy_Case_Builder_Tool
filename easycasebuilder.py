@@ -65,6 +65,7 @@ def sslscan():
     os.system(f"sslscan {ip_address} > Case_{ip_address}/sslscan.txt")
     print(f"sslscan result for {ip_address} is succesfully saved as sslscan.txt")
 
-
-case()
-main()
+# Best practice python naming convention
+if __name__ == "__main__":
+    case()
+    main()
